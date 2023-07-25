@@ -1,0 +1,52 @@
+.contacts__section {
+    margin-top: 100px;
+    width: 100%;
+    @include display-flex-column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &--title {
+        @include blue-titles;
+    }
+    &--caption{
+        @include caption-styles;
+    }
+    &--list{
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        @include _1200px {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @include _320px {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+
+        }
+    }
+}
+
+.contacts__item {
+    margin: 20px auto;
+    &:hover {
+        @include hover;
+        transform: scale(1.01);
+        border-radius: 20px;
+        transition: all .3s;
+      
+    }
+
+    &--link {
+            display: inline-grid;
+            justify-items: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $color-black;
+            font-style: italic;
+
+        }
+}

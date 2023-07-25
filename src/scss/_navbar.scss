@@ -1,0 +1,140 @@
+.menu__list {
+  width: 100%;
+  @include display-flex-row;
+  padding: 0;
+  gap: 60px;
+
+
+  &--item{
+    list-style: none;
+    &__link {
+      // padding: 10px;
+      display: inline-block;
+      width: 100%;  
+      text-decoration: none;
+      color: $color-black;
+      cursor: pointer;
+    }
+    &:hover {
+      @include hover;
+    }
+  }
+  @include _768px {
+    display: none;
+  }
+  @include _320px {
+    display: none;
+  }
+
+}
+
+// Extended Menu for Burger 
+
+.menu-extended {
+  @include _320px {
+    @include display-flex-column;
+    @include menu-extender;
+    
+    & > li {
+      padding: 0;
+      width: 100%;
+      font-size: 17px;
+      & > a {
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        &:hover {
+          @include hover;
+        }
+      }
+    }
+  }
+  @include _768px {
+    @include display-flex-column;
+    @include menu-extender;
+    
+    & > li {
+      padding: 0;
+      width: 100%;
+      font-size: 17px;
+      & > a {
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        &:hover {
+          @include hover;
+        }
+      }
+    }
+
+  }
+}
+
+
+// BURGER 
+
+.burger-menu {
+  @include _1200px {
+    display: none;
+  }
+  @include _small_screens {
+    display: none;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+
+  &:hover {
+    border: 1px solid white;
+  }
+  &:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  & span {
+    width: 25px;
+    height: 3px;
+    background: #131313;
+    border-radius: 100px;
+    transition: 0.3s ease;
+  
+  }
+
+  position: relative;
+}
+
+.burger-menu.checked{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  & .burger-menu__item1{
+    transform: translateY(350%)rotate(45deg);
+    width: 25px;
+  }
+
+  & .burger-menu__item2{
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  & .burger-menu__item3{
+    transform: translateY(-200%) rotate(-45deg);
+    width: 25px;
+    box-shadow: 0 0 10px #495057;
+  }
+}
+
+//   END BURGER
+
+

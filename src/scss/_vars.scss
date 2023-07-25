@@ -1,0 +1,15 @@
+// **** general vars **** //
+$color-black: #000;
+$color-blue: #0064ff;
+
+$elastic: (
+  position: left,
+  width: 300,
+  backgroundColor: #7c7fe0,
+  duration: 300,
+);
+
+$position: map-get($elastic, 'position');
+$width: map-get($elastic, 'width');
+$backgroundColor: map-get($elastic, 'backgroundColor');
+$duration: map-get($elastic, 'duration');

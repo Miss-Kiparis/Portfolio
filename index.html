@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./dist/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./dist/styles/style.min.css">
+    <title>Portfolio Page</title>
+</head>
+
+<body class="page__body">
+    <header class="page__header">
+        <section class="page__header--top__wrapper top__wrapper">
+            <a class="top__wrapper--logo__link logo__link" href="#">
+                <h1 class="logo__link--item logo">Anastasiia.dev</h1>
+            </a>
+            <!-- Navigation -->
+            <nav class="top__wrapper--nav nav__container nav__menu menu">
+
+                <!-- Burger -->
+                <div class="burger-menu">
+                    <span class="burger-menu__item1"></span>
+                    <span class="burger-menu__item2"></span>
+                    <span class="burger-menu__item3"></span>
+                </div>
+                <!-- End Burger -->
+
+                <ul class="nav__container--menu menu__list">
+                    <li class="menu__list--item ">
+                        <a class="menu__list--item__link" href="#Tech_Stack">Tech Stack</a>
+                    </li>
+                    <li class="menu__list--item">
+                        <a class="menu__list--item__link" href="#About">About</a>
+                    </li>
+                    <li class="menu__list--item">
+                        <a class="menu__list--item__link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="menu__list--item">
+                        <a class="menu__list--item__link" href="#Contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End of navigation-->
+        </section>
+        <!-- INTRO -->
+        <section class="page__header--intro intro__container">
+            <div class="intro__container--descr intro__description">
+                <h2 class="intro__description--title">Front-End Developer👋</h2>
+                <p class="intro__description--text">Hi, I'm Anastasiia Mylenko. A Passionate Front-End Developer based
+                    in
+                    Kyiv, Ukraine📍</p>
+                <div class="intro__description--socials socials__wrapper">
+                    <a href="https://www.linkedin.com/in/anastasiia-mylenko-990450195/"
+                        class="socials__wrapper--item item__link">
+                        <svg class="item__link--pic linkedin-pic" viewBox="0 0 50 50" width="50px" height="50px">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56c3.97,0,7.19,2.73,7.19,8.26V39z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Miss-Kiparis" class="socials__wrapper--item item__link">
+                        <svg class="item__link--pic github-pic" width="50" height="50">
+                            <path
+                                d="M17.791 46.836A1.999 1.999 0 0019 45v-5.4c0-.197.016-.402.041-.61A.611.611 0 0119 39h-3.6c-1.5 0-2.8-.6-3.4-1.8-.7-1.3-1-3.5-2.8-4.7-.3-.2-.1-.5.5-.5.6.1 1.9.9 2.7 2 .9 1.1 1.8 2 3.4 2 2.487 0 3.82-.125 4.622-.555C21.356 34.056 22.649 33 24 33v-.025c-5.668-.182-9.289-2.066-10.975-4.975-3.665.042-6.856.405-8.677.707a21.537 21.537 0 01-.151-.987c1.797-.296 4.843-.647 8.345-.714a8.162 8.162 0 01-.291-.849c-3.511-.178-6.541-.039-8.187.097-.02-.332-.047-.663-.051-.999 1.649-.135 4.597-.27 8.018-.111a9.832 9.832 0 01-.13-1.543c0-1.7.6-3.5 1.7-5-.5-1.7-1.2-5.3.2-6.6 2.7 0 4.6 1.3 5.5 2.1C21 13.4 22.9 13 25 13s4 .4 5.6 1.1c.9-.8 2.8-2.1 5.5-2.1 1.5 1.4.7 5 .2 6.6 1.1 1.5 1.7 3.2 1.6 5 0 .484-.045.951-.11 1.409 3.499-.172 6.527-.034 8.204.102-.002.337-.033.666-.051.999-1.671-.138-4.775-.28-8.359-.089a8.272 8.272 0 01-.325.98c3.546.046 6.665.389 8.548.689-.043.332-.093.661-.151.987-1.912-.306-5.171-.664-8.879-.682-1.665 2.878-5.22 4.755-10.777 4.974V33c2.6 0 5 3.9 5 6.6V45c0 .823.498 1.53 1.209 1.836C41.37 43.804 48 35.164 48 25 48 12.318 37.683 2 25 2S2 12.318 2 25c0 10.164 6.63 18.804 15.791 21.836z" />
+                        </svg>
+                    </a>
+                    <a href="https://t.me/kiparisboris" class="socials__wrapper--item item__link ">
+                        <svg class="item__link--pic telegram-pic" viewBox="0 0 256 256" width="50" height="50">
+                            <path
+                                d="M128 10.24c65.04 0 117.76 52.72 117.76 117.76S193.04 245.76 128 245.76 10.24 193.04 10.24 128 62.96 10.24 128 10.24zM168.622 176c2.166-6.646 12.314-72.878 13.568-85.929.379-3.953-.87-6.58-3.318-7.752-2.959-1.423-7.342-.711-12.426 1.122-6.973 2.514-96.123 40.366-101.274 42.557-4.884 2.074-9.502 4.337-9.502 7.614 0 2.304 1.367 3.599 5.135 4.945 3.922 1.398 13.799 4.393 19.63 6.001 5.617 1.551 12.012.205 15.596-2.022 3.799-2.36 47.641-31.698 50.79-34.268 3.144-2.57 5.653.721 3.082 3.297-2.57 2.57-32.665 31.78-36.633 35.824-4.818 4.91-1.398 10 1.833 12.038 3.691 2.324 30.238 20.131 34.237 22.988 3.999 2.857 8.054 4.153 11.766 4.153 3.712 0 5.668-4.89 7.516-10.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <img class="intro__container--avatar" src="/dist/img/avatar.png" alt="avatar picture">
+        </section>
+        <!-- END INTRO -->
+    </header>
+    <main class="page__main">
+        <section class="page__main--stack stack__wrapper">
+            <h3 class="stack__wrapper--title" id="Tech_Stack">Tech Stack</h3>
+            <ul class="stack__wrapper--list stack__list">
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                        alt="tech stack JS picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                        alt="tech stack HTML picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                        alt="tech stack css picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"
+                        alt="tech stack sass picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white"
+                        alt="tech stack gulp picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                        alt="tech stack react picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
+                        alt="tech stack redux picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                        alt="tech stack figma picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
+                        alt="tech stack jira picture " class="stack__list--item list__item--pic"></li>
+                <li class="stack__list--item list__item"><img
+                        src="https://img.shields.io/badge/GIT-%23CF4647.svg?style=for-the-badge&logo=git&logoColor=white"
+                        alt="tech stack git picture " class="stack__list--item list__item--pic"></li>
+            </ul>
+
+            <!-- About Me article -->
+            <article class="stack__wrapper--about about__wrapper" id="About">
+                <picture class="about__wrapper-- picture__container picture__container">
+                    <source srcset="./dist/img/comp250.jpg" media="(max-width: 550px)">
+                    <source srcset="./dist/img/comp350.jpg" media="(max-width: 768px)">
+                    <source srcset="./dist/img/comp.jpg" media="(min-width: 769px)">
+                    <img class="picture__container--pic" src="./dist/img/comp.jpg" alt="about me section picture">
+                </picture>
+                <div class="about__wrapper--article about__article">
+                    <h2 class="about__article--title">About me</h2>
+                    <h3 class="about__article--caption">A dedicated Front-End Developer based in
+                        Kyiv, Ukraine📍</h3>
+                    <p class="about__article--text">As a Junior Front-End Developer, I boast an impressive arsenal of
+                        skills, including proficiency in HTML, CSS, JavaScript, React, Redux, Gulp, and Sass
+                        (particularly SCSS). My expertise lies in designing and maintaining responsive websites that
+                        provide users with a seamless and enjoyable experience.
+
+                    <p class="about__article--text">Additionally, my previous role as a QA engineer equipped me with
+                        valuable experience working
+                        with tools like Jira, Trello, and Confluence, giving me invaluable insights into the software
+                        development life cycle. This unique combination of skills not only enhances my abilities as a
+                        frontend developer but also allows me to approach projects with a holistic perspective, ensuring
+                        the highest level of quality and user satisfaction.</p>
+
+                    <p class="about__article--text">I am eager to contribute my diverse skill set to collaborative
+                        projects and continuously expand
+                        my knowledge to stay ahead in the ever-evolving world of web development. Let's create
+                        innovative and user-friendly digital experiences together!</p>
+                    </p>
+
+                </div>
+            </article>
+            <!-- END About Me article -->
+
+            <!-- Projects -->
+            <section class="projects__wrapper" id="Projects">
+                <h2 class="projects__wrapper--title">Portfolio</h2>
+                <h3 class="projects__wrapper--caption">Each project is unique piece of development 🧩</h3>
+
+                <ul class="projects__wrapper--list projects__list">
+                    <li class="projects__list--item project__item project__item1 ">
+                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                        <div class="project__item--descr project__description">
+                            <h3 class="project__description--title">Title</h3>
+                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
+                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
+                                perspiciatis iure.</p>
+                            <div class=" project__description--stack__container stack__container">
+                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">SCSS</p>
+                            </div>
+                            <div class="project__description--links__container links__container">
+                                <a href="#" class="links__container--item code__item">Code</a>
+                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects__list--item project__item even project__item2">
+                        <div class="project__item--descr project__description">
+                            <h3 class="project__description--title">Coffee Cafe</h3>
+                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
+                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
+                                perspiciatis iure.</p>
+                            <div class=" project__description--stack__container stack__container">
+                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">SCSS</p>
+                            </div>
+                            <div class="project__description--links__container links__container">
+                                <a href="https://github.com/Miss-Kiparis/Coffee__shop" target="_blank"
+                                    class="links__container--item code__item">Code
+                                </a>
+                                <a href="https://miss-kiparis.github.io/Coffee__shop/" target="_blank"
+                                    class="links__container--item demo__item">Live Demo
+                                </a>
+
+                            </div>
+                        </div>
+                        <img class="project__item--pic" src="./dist/img/projects_pics/Coffee-Cafe.png" alt="mock pic">
+
+                    </li>
+                    <li class="projects__list--item project__item project__item3">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/Forkio.png" alt="mock pic">
+                        <div class="project__item--descr project__description ">
+                            <h3 class="project__description--title">Forkio</h3>
+                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
+                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
+                                perspiciatis iure.</p>
+                            <div class=" project__description--stack__container stack__container">
+                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">SCSS</p>
+                            </div>
+                            <div class="project__description--links__container links__container">
+                                <a href="https://github.com/Miss-Kiparis/2nd-step-project/tree/main" target="_blank"
+                                    class="links__container--item code__item">Code</a>
+                                <a href="https://miss-kiparis.github.io/2nd-step-project/" target="_blank"
+                                    class="links__container--item demo__item">Live Demo</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects__list--item project__item even project__item4">
+                        <div class="project__item--descr project__description">
+                            <h3 class="project__description--title">Title</h3>
+                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
+                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
+                                perspiciatis iure.</p>
+                            <div class=" project__description--stack__container stack__container">
+                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">SCSS</p>
+                            </div>
+                            <div class="project__description--links__container links__container">
+                                <a href="#" class="links__container--item code__item">Code</a>
+                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+
+                            </div>
+                        </div>
+                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                    </li>
+                    <li class="projects__list--item project__item project__item5">
+                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                        <div class="project__item--descr project__description">
+                            <h3 class="project__description--title">Title</h3>
+                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
+                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
+                                perspiciatis iure.</p>
+                            <div class=" project__description--stack__container stack__container">
+                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">SCSS</p>
+                            </div>
+                            <div class="project__description--links__container links__container">
+                                <a href="#" class="links__container--item code__item">Code</a>
+                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- End Projects section -->
+
+            <!-- Contacts -->
+            <section class="stack__wrapper--conacts contacts__section" id="Contacts">
+                <h2 class="contacts__section--title">Contacts</h2>
+                <p class="contacts__section--caption">Don't be shy! Hit me up!👇</p>
+                <ul class="contacts__section--list">
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link"
+                            href="https://drive.google.com/file/d/1Bpl6qxiSlnFoAepUriFwgjORkJW6LOCW/view?usp=sharing"
+                            target="_blank">
+                            <img class="contacts__item--pic" src="./dist/img/resume.png" alt="resume icon">
+                            Check my CV here
+                        </a>
+                    </li>
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link" href="mailto: kiparisborismoris@gmail.com"> <img
+                                class="contacts__item--pic" src="./dist/img/email.png" alt="email icon">
+                            kiparisborismoris@gmail.com</a>
+                    </li>
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link" href="tel: 380953999495"> <img class="contacts__item--pic"
+                                src="./dist/img/phone.png" alt="phone icon">
+                            +(38)095-399-94-95</a>
+                    </li>
+
+                    <!-- previous links -->
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link" href="https://www.linkedin.com/in/anastasiia-mylenko-990450195/"
+                            target="_blank"> <img class="contacts__item--pic" src="./dist/img/linkedin.png"
+                                alt="linkedin icon">
+                            Write me on Linkedin </a>
+                    </li>
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link" href="https://t.me/kiparisboris" target="_blank"> <img
+                                class="contacts__item--pic" src="./dist/img/telegram.png" alt="telegram icon">
+                            Contact me via telegram </a>
+                    </li>
+                    <li class="contacts__list--item contacts__item">
+                        <a class="contacts__item--link" href="https://github.com/Miss-Kiparis" target="_blank">
+                            <img class="contacts__item--pic" src="./dist/img/github.png" alt="github icon">
+                            Check my Github
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+        </section>
+
+
+        <!-- SCROLLER -->
+        <div class="scroll-up">
+            <svg class="scroll-up__svg" width="50px" height="50px" viewBox="0 0 512 512">
+                <path class="scroll-up__svg-path" fill="#000" d="M256 23.05C127.5 23.05 23.05 127.5
+                         23.05 256S127.5 488.9 256 488.9 488.9 384.5 
+                         488.9 256 384.5 23.05 256 23.05zm0 17.9c118.9 0
+                         215.1 96.15 215.1 215.05S374.9 471.1 256 471.1c-118.9 
+                         0-215.05-96.2-215.05-215.1C40.95 137.1 137.1 40.95 256 40.95z" />
+            </svg>
+        </div>
+        <!-- END SCROLLER -->
+    </main>
+
+    <script src="./dist/js/script.min.js"></script>
+</body>
+
+</html>

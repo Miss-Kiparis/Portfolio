@@ -1,0 +1,104 @@
+.top__wrapper {
+@include display-flex-row;
+justify-content: space-between;
+min-height: 108px;  
+}
+
+.logo__link {   
+    text-decoration: none;
+    @include _320px {
+    font-size: 1rem;        
+    }
+
+    &--item{
+        color: $color-black;
+        margin: 0;
+        &:hover {
+            @include hover;
+       }
+    }
+ 
+}
+
+// INTRO
+
+.intro__container {
+    @include display-flex-row;
+    @include _small_screens {
+        gap: 0;
+    }
+    justify-content: center;
+    gap: 50px;
+    min-height: 500px;
+    &--descr {
+        max-width: 650px;
+    }
+    &--avatar {
+        @include _768px {
+            height: 300px;
+            width: 220px;
+        }
+        @include _320px {
+            height: 200px;
+            width: 140px;
+        }
+        border-radius: 46%;
+    }
+}
+
+.intro__description {
+    &--title{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    &--text {
+        font-size: 1.3rem;
+        line-height: 37px;
+        letter-spacing:.03em;
+    }
+    &--socials{
+        @include display-flex-row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    @include _small_screens {
+        &--title{
+            font-size: 2.2rem;
+        }
+        &--text {
+            font-size: 1rem;
+        }
+    }
+
+    @include _768px {
+        &--title{
+            font-size: 1.4rem;
+        }
+        &--text {
+            font-size: 0.8rem;
+        }
+        &--socials{
+            flex-wrap: nowrap;
+            width: 35px;
+            height: 35px;
+        }
+    }
+    @include _320px {
+        &--title{
+            font-size: 1.2rem;
+        }
+        &--text {
+            font-size: 0.7rem;
+        }
+        &--socials{
+        justify-content: center;      
+        }
+    }
+}
+
+.item__link--pic:hover {
+    fill: $color-blue;
+    transition: .4s linear;
+}
+
+/// END INTRO

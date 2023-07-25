@@ -1,0 +1,23 @@
+.stack__wrapper {
+    @include display-flex-column;
+    text-align: center;
+    &--title {
+        font-size: 2rem;
+    }
+    &--list{
+        @include display-flex-row;
+        justify-content: center;
+        width: calc(80% - (80px / 2));
+        padding: 0;
+        margin: 50px 0;
+        list-style: none;
+        gap: 50px;
+    }
+}
+
+.list__item {
+    &--pic {
+    border-radius: 5%;
+    height: 34px;
+    }
+}

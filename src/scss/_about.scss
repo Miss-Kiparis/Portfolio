@@ -1,0 +1,41 @@
+.about__wrapper {
+    @include display-flex-row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 120px auto;
+    &--pic {
+    border-radius: 3%;
+    }
+    @include _768px  {
+    @include display-flex-column;
+    }
+    @include _320px {
+    @include display-flex-column;
+    font-size: 1rem;
+    }
+}
+
+.about__article {
+    width: 85%;
+    text-align: start;
+    &--title{
+        @include blue-titles;
+    }
+    &--caption{
+        @include caption-styles;
+        @include _320px {
+            font-size: 1.1rem;
+        }
+    }
+    &--text {
+        line-height: 1.6em;
+        @include _320px {
+            font-size: 1rem;
+        }
+    }
+    @include _1200px {
+        width: calc(50% - (80px/2));
+    }
+}

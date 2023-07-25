@@ -1,0 +1,114 @@
+.projects__wrapper {
+    margin-top: 110px;
+    @include display-flex-column;
+    justify-content: center;
+    align-items: center;
+    @include _1200px {
+    align-items: flex-start;
+        }
+    &--title {
+        @include blue-titles;
+    }
+    &--caption{
+        @include caption-styles;
+        @include _320px {
+            font-size: 1.1rem;
+        }
+    }
+    &--list{
+        padding: 0;
+        list-style: none;
+        @include _320px {
+            font-size: 1rem;
+        }
+    }
+}
+
+.project__item {
+    @include display-flex-column;
+    justify-content: center;
+    gap: 50px;
+    margin: 120px auto;
+    &--pic {
+        @include _320px {
+            width: 285px;
+        }
+    }
+    &--descr {
+        width: calc(60% - (80px/2)); 
+        @media (max-width: 1195px) {
+            order: 1;
+        }
+        order: 0;
+   
+    }
+    @include _1200px {
+        @include display-flex-row;
+        align-items: flex-start;
+    }
+}
+
+.project__description {
+    &--title {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing:.3rem;
+    }
+    &--text {
+        line-height: 1.6em;
+    }
+    &--stack__container {
+        @include display-flex-row; 
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-weight: 700;
+    }
+    &--links__container {
+        @include display-flex-row;
+        justify-content: center;
+    
+        gap: 20px; 
+
+        &>.links__container--item {
+        text-decoration: none;
+        border: 2px solid $color-black;
+        border-radius: 5%;
+        padding: 10px 30px 10px 15px;
+        margin: 20px;
+        font-weight: 700;
+        color: $color-black;
+        position: relative;
+        &:hover {
+            background-color: rgba(164, 169, 174, 0.565);
+            text-shadow: rgb(155, 155, 155) 1px 0 10px;;
+            transition: .2s linear;
+        }
+       }
+    }
+}
+
+.code__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 82%;          
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%); 
+    background-image: url("../img/github.svg");
+    background-size: cover;
+}
+
+.demo__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 88%;          
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%); 
+    background-image: url("../img/external-link.png");
+    background-size: cover;
+}
