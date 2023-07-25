@@ -67,8 +67,7 @@
     }
     &--links__container {
         @include display-flex-row;
-        justify-content: center;
-    
+        justify-content: center;    
         gap: 20px; 
 
         &>.links__container--item {
@@ -81,9 +80,13 @@
         color: $color-black;
         position: relative;
         &:hover {
-            background-color: rgba(164, 169, 174, 0.565);
-            text-shadow: rgb(155, 155, 155) 1px 0 10px;;
-            transition: .2s linear;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+           
         }
        }
     }
@@ -99,6 +102,8 @@
     transform: translate(-50%, -50%); 
     background-image: url("../img/github.svg");
     background-size: cover;
+    transform: scaleX(1.4), scaleY(1.6);
+
 }
 
 .demo__item::after {
@@ -111,4 +116,6 @@
     transform: translate(-50%, -50%); 
     background-image: url("../img/external-link.png");
     background-size: cover;
+    transform: scaleX(1.4), scaleY(1.6);
+
 }
