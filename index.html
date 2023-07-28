@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./dist/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./dist/img/icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="./dist/styles/style.min.css">
     <title>Portfolio Page</title>
 </head>
@@ -76,7 +76,7 @@
                     </a>
                 </div>
             </div>
-            <img class="intro__container--avatar" src="./dist/img/avatar.png" alt="avatar picture">
+            <img class="intro__container--avatar" src="./dist/img/avatar/avatar.png" alt="avatar picture">
         </section>
         <!-- END INTRO -->
     </header>
@@ -119,10 +119,11 @@
             <!-- About Me article -->
             <article class="stack__wrapper--about about__wrapper" id="About">
                 <picture class="about__wrapper-- picture__container picture__container">
-                    <source srcset="./dist/img/comp250.jpg" media="(max-width: 550px)">
-                    <source srcset="./dist/img/comp350.jpg" media="(max-width: 768px)">
-                    <source srcset="./dist/img/comp.jpg" media="(min-width: 769px)">
-                    <img class="picture__container--pic" src="./dist/img/comp.jpg" alt="about me section picture">
+                    <source srcset="./dist/img/about section/comp250.jpg" media="(max-width: 550px)">
+                    <source srcset="./dist/img/about section/comp350.jpg" media="(max-width: 768px)">
+                    <source srcset="./dist/img/about section/comp.jpg" media="(min-width: 769px)">
+                    <img class="picture__container--pic" src="./dist/img/about section/comp.jpg"
+                        alt="about me section picture">
                 </picture>
                 <div class="about__wrapper--article about__article">
                     <h2 class="about__article--title">About me</h2>
@@ -157,20 +158,25 @@
 
                 <ul class="projects__wrapper--list projects__list">
                     <li class="projects__list--item project__item project__item1 ">
-                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/React-App.png"
+                            alt="react project about Cats.Cats Shop.">
                         <div class="project__item--descr project__description">
-                            <h3 class="project__description--title">Title</h3>
-                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
-                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
-                                perspiciatis iure.</p>
+                            <h3 class="project__description--title">Cats Shop</h3>
+                            <p class="project__description--text">The shop of the cutest cats, made entirely on React.
+                                Not adaptive. Added Redax toolkit for practice. There are also examples of tests made on
+                                Jest.</p>
                             <div class=" project__description--stack__container stack__container">
                                 <p class="stack__container--item">React</p>
-                                <p class="stack__container--item">SCSS</p>
+                                <p class="stack__container--item">Redux</p>
+                                <p class="stack__container--item">Formik + Yup</p>
+                                <p class="stack__container--item">Context API</p>
+                                <p class="stack__container--item">Jest</p>
                             </div>
                             <div class="project__description--links__container links__container">
-                                <a href="#" class="links__container--item code__item">Code</a>
-                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+                                <a href="https://github.com/Miss-Kiparis/Cats-Shop/tree/main"
+                                    class="links__container--item code__item">Code</a>
+                                <a href="https://miss-kiparis.github.io/Cats-Shop/"
+                                    class="links__container--item demo__item">Live Demo</a>
 
                             </div>
                         </div>
@@ -178,12 +184,10 @@
                     <li class="projects__list--item project__item even project__item2">
                         <div class="project__item--descr project__description">
                             <h3 class="project__description--title">Coffee Cafe</h3>
-                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
-                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
-                                perspiciatis iure.</p>
+                            <p class="project__description--text"> A simple, JS powered webpage for coffee lovers.
+                                Adaptive. Added a running numbers effect on the page, made with Vanilla JS. </p>
                             <div class=" project__description--stack__container stack__container">
-                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">GULP</p>
                                 <p class="stack__container--item">SCSS</p>
                             </div>
                             <div class="project__description--links__container links__container">
@@ -196,19 +200,19 @@
 
                             </div>
                         </div>
-                        <img class="project__item--pic" src="./dist/img/projects_pics/Coffee-Cafe.png" alt="mock pic">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/Coffee-Cafe.png"
+                            alt="Coffee Shop webpage picture">
 
                     </li>
                     <li class="projects__list--item project__item project__item3">
-                        <img class="project__item--pic" src="./dist/img/projects_pics/Forkio.png" alt="mock pic">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/Forkio.png"
+                            alt="A business webpage picture">
                         <div class="project__item--descr project__description ">
                             <h3 class="project__description--title">Forkio</h3>
-                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
-                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
-                                perspiciatis iure.</p>
+                            <p class="project__description--text">A sleek and adaptable business webpage designed to fit
+                                all screens! </p>
                             <div class=" project__description--stack__container stack__container">
-                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">GULP</p>
                                 <p class="stack__container--item">SCSS</p>
                             </div>
                             <div class="project__description--links__container links__container">
@@ -222,38 +226,42 @@
                     </li>
                     <li class="projects__list--item project__item even project__item4">
                         <div class="project__item--descr project__description">
-                            <h3 class="project__description--title">Title</h3>
-                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
-                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
-                                perspiciatis iure.</p>
+                            <h3 class="project__description--title">The Ham</h3>
+                            <p class="project__description--text">The layout is made only for wide-format monitors with
+                                a screen width of 1200 pixels or more. Not adaptive. The tabs in the Our services
+                                section are switched by clicking with the mouse. The Load more button in the Our amazing
+                                work section simulates loading new pictures from the server..</p>
                             <div class=" project__description--stack__container stack__container">
-                                <p class="stack__container--item">React</p>
-                                <p class="stack__container--item">SCSS</p>
+                                <p class="stack__container--item">JS</p>
+                                <p class="stack__container--item">HTML + CSS</p>
                             </div>
                             <div class="project__description--links__container links__container">
-                                <a href="#" class="links__container--item code__item">Code</a>
-                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+                                <a href="https://github.com/Miss-Kiparis/1st-step-project-"
+                                    class="links__container--item code__item">Code</a>
+                                <a href="https://miss-kiparis.github.io/1st-step-project-/"
+                                    class="links__container--item demo__item">Live Demo</a>
 
                             </div>
                         </div>
-                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/the ham.png"
+                            alt="The Ham webpage.">
                     </li>
                     <li class="projects__list--item project__item project__item5">
-                        <img class="project__item--pic" src="./dist/img/about.png" alt="mock pic">
+                        <img class="project__item--pic" src="./dist/img/projects_pics/mobile-first.png"
+                            alt="Mobile-first webpage">
                         <div class="project__item--descr project__description">
-                            <h3 class="project__description--title">Title</h3>
-                            <p class="project__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Necessitatibus voluptas, illo commodi aperiam perferendis maxime asperiores
-                                dolores! Nam in itaque, laborum nihil temporibus, earum illum fugit iusto perferendis
-                                perspiciatis iure.</p>
+                            <h3 class="project__description--title">Mobile-first webpage</h3>
+                            <p class="project__description--text">A simple markup of webpage. Adaptive for smartphones &
+                                tablets.</p>
                             <div class=" project__description--stack__container stack__container">
-                                <p class="stack__container--item">React</p>
+                                <p class="stack__container--item">Gulp</p>
                                 <p class="stack__container--item">SCSS</p>
                             </div>
                             <div class="project__description--links__container links__container">
-                                <a href="#" class="links__container--item code__item">Code</a>
-                                <a href="#" class="links__container--item demo__item">Live Demo</a>
+                                <a href="https://github.com/Miss-Kiparis/Mobile-Desktop-version-site"
+                                    class="links__container--item code__item">Code</a>
+                                <a href="https://github.com/Miss-Kiparis/Mobile-Desktop-version-site"
+                                    class="links__container--item demo__item">Live Demo</a>
 
                             </div>
                         </div>

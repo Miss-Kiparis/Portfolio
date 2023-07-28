@@ -30,6 +30,7 @@
     gap: 50px;
     margin: 120px auto;
     &--pic {
+        width: 440px;
         @include _320px {
             width: 285px;
         }
@@ -100,7 +101,7 @@
     width: 20px;
     height: 20px;
     transform: translate(-50%, -50%); 
-    background-image: url("../img/github.svg");
+    background-image: url("../img/icons/github.svg");
     background-size: cover;
     transform: scaleX(1.4), scaleY(1.6);
 
@@ -114,7 +115,7 @@
     width: 25px;
     height: 25px;
     transform: translate(-50%, -50%); 
-    background-image: url("../img/external-link.png");
+    background-image: url("../img/icons/external-link.png");
     background-size: cover;
     transform: scaleX(1.4), scaleY(1.6);
 
